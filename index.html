@@ -8,32 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
     <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <style>
-        body {
-            font-family: 'IBM Plex Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .button {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #0270D7;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 600;
-            margin: 10px 0;
-        }
-        .button:hover {
-            background-color: #0253a9;
-        }
-    </style>
 </head>
 <body>
     <div style="box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);">
@@ -53,13 +27,48 @@
             <section style="position: relative; height: 800px; overflow: hidden;">
                 <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-image: url('src/images/bg.jpg'); background-size: cover; background-position: center; opacity: 0.8;"></div>
                 <div class="container">
-                    <div style="position: relative; z-index: 2; display: flex; justify-content: center; align-items: center; min-height: 100vh; text-align: center;">
-                        <div>
-                            <h1 style="color: white; font-size: 48px; margin-bottom: 20px;">Your Magic SocialVR App</h1>
-                            <p style="color: white; font-size: 24px; margin-bottom: 30px;">Ready to redefine reality? Dive into Reborn VR and unleash your wildest dreams.</p>
-                            <div><a class="button" href="https://www.meta.com/experiences/9100500193300999/">🔥 Download on Quest Store</a></div>
-                            <div><a class="button" href="https://oss-dev.hamer.xin/4T2M2QiR/v1.9.34.zip">🔥 Download Windows version</a></div>
-                            <div><a class="button" href="https://oss-dev.hamer.xin/4T2M2QiR/Reborn_quest_1.5.8.apk">🔥 Download Android version</a></div>
+                    <div class="hero-inner" style="margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; text-align: center;">
+						<div style="z-index: 2; ">
+	                        <h1 class="">Your Magic SocialVR App</h1>
+	                        <p class="hero-paragraph" style="color: white;">Ready to redefine reality? Dive into Reborn VR and unleash your wildest dreams.</p>
+	                        <div class="hero-cta"><a class="button button-primary" href="https://www.meta.com/experiences/9100500193300999/">🔥 Download on Quest Store</a></div>
+						</div>
+					
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section">
+                <div class="container">
+					<div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-wrap">
+							<div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/feature-icon-02.svg" alt="Feature 02">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Highly unlimited scripting ability</h4>
+                                    <p class="text-sm mb-0">Reborn VR redefines the boundaries of creation with its highly unlimited scripting ability, enabling users to craft anything from simple games to AAA titles using the Reborn SDK. Unleash your imagination and bring your wildest game concepts to life, all within the immersive world of Reborn VR.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/feature-icon-03.svg" alt="Feature 03">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Global community hub</h4>
+                                    <p class="text-sm mb-0">Reborn VR is not just a game; it's a global community hub where you can meet and connect with diverse individuals from around the world. Form lasting bonds, build communities, and organize events ranging from virtual meetups to large-scale VR gatherings, all in a space where every interaction is an opportunity for a new adventure.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/feature-icon-04.svg" alt="Feature 04">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Cutting-edge AI algorithms to offer personalized recommendations</h4>
+                                    <p class="text-sm mb-0">Dive into a tailored VR experience like no other, as Reborn VR utilizes cutting-edge AI algorithms to offer personalized recommendations, ensuring you're always just a step away from your next favorite 3D adventure. </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
