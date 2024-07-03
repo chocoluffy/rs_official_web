@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reborn VR: Your Magical Social VR App</title>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
-    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <link rel="stylesheet" href="dist/css/style.css">
+	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
-<body>
-    <div style="box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);">
-        <header style="background-color: white; padding: 20px 0;">
+<body class="is-boxed has-animations">
+    <div class="body-wrap">
+        <header class="site-header">
             <div class="container">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div>
-                        <a href="#">
-                            <img src="dist/images/logo-new.png" alt="Logo" style="max-width: 200px;">
-                        </a>
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+							<a href="#">
+								<img class="header-logo-image" src="dist/images/logo-new.png" alt="Logo" style="max-width: 200px;">
+                            </a>
+                        </h1>
                     </div>
                 </div>
             </div>
         </header>
 
         <main>
-            <section style="position: relative; height: 800px; overflow: hidden;">
-                <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-image: url('src/images/bg.jpg'); background-size: cover; background-position: center; opacity: 0.8;"></div>
+            <section class="hero" style="position: relative; height: 800px; overflow: hidden;">
+                <div class="background-image" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-image: url('src/images/bg.jpg'); background-size: cover; background-position: center; opacity: 0.8; z-index: 1;"></div>
                 <div class="container">
                     <div class="hero-inner" style="margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; text-align: center;">
 						<div style="z-index: 2; ">
@@ -74,59 +77,44 @@
                 </div>
             </section>
 
-            <section style="padding: 80px 0; background-color: white;">
-                <div class="container">
-                    <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
-                        <div style="flex-basis: 30%; text-align: center; margin-bottom: 40px;">
-                            <div><img src="dist/images/feature-icon-02.svg" alt="Feature 02" style="max-width: 80px;"></div>
-                            <h4 style="margin-top: 24px;">Highly unlimited scripting ability</h4>
-                            <p style="font-size: 14px;">Reborn VR redefines the boundaries of creation with its highly unlimited scripting ability, enabling users to craft anything from simple games to AAA titles using the Reborn SDK.</p>
-                        </div>
-                        <div style="flex-basis: 30%; text-align: center; margin-bottom: 40px;">
-                            <div><img src="dist/images/feature-icon-03.svg" alt="Feature 03" style="max-width: 80px;"></div>
-                            <h4 style="margin-top: 24px;">Global community hub</h4>
-                            <p style="font-size: 14px;">Reborn VR is not just a game; it's a global community hub where you can meet and connect with diverse individuals from around the world.</p>
-                        </div>
-                        <div style="flex-basis: 30%; text-align: center; margin-bottom: 40px;">
-                            <div><img src="dist/images/feature-icon-04.svg" alt="Feature 04" style="max-width: 80px;"></div>
-                            <h4 style="margin-top: 24px;">Cutting-edge AI algorithms</h4>
-                            <p style="font-size: 14px;">Dive into a tailored VR experience like no other, as Reborn VR utilizes cutting-edge AI algorithms to offer personalized recommendations.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </main>
 
-        <footer style="background-color: #182538; color: #98A9BC; padding: 40px 0;">
+        <footer class="site-footer">
             <div class="container">
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-                    <div>
-                        <a href="#">
-                            <img src="dist/images/logo-new.png" alt="Logo" style="max-width: 100px;">
-                        </a>
+                <div class="site-footer-inner">
+                    <div class="brand footer-brand">
+						<a href="#">
+							<img class="header-logo-image" src="dist/images/logo-new.png" alt="Logo" style="max-width: 100px;">
+						</a>
                     </div>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="display: inline; margin-right: 20px;"><a href="https://discord.com/invite/kFs7h7vtJJ" style="color: #98A9BC; text-decoration: none;">Contact</a></li>
-                        <li style="display: inline;"><a href="https://www.rebornsdk.xyz/" style="color: #98A9BC; text-decoration: none;">SDK</a></li>
+                    <ul class="footer-links list-reset">
+                        <li>
+                            <a href="https://discord.com/invite/kFs7h7vtJJ">Contact</a>
+                        </li>
+                        <li>
+                            <a href="https://www.rebornsdk.xyz/">SDK</a>
+                        </li>
                     </ul>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="display: inline; margin-right: 20px;">
-                            <a href="https://twitter.com/Reborn_VR" style="color: #98A9BC;">
+                    <ul class="footer-social-links list-reset">
+                        <li>
+                            <a href="https://twitter.com/Reborn_VR">
+                                <span class="screen-reader-text">Twitter</span>
                                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#0270D7"/>
                                 </svg>
                             </a>
                         </li>
-                        <li style="display: inline;">
-                            <a href="https://www.youtube.com/@rebornvrofficial" style="color: #98A9BC;">
+                        <li>
+                            <a href="https://www.youtube.com/@rebornvrofficial">
+                                <span class="screen-reader-text">Youtube</span>
                                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#0270D7"/>
                                 </svg>
                             </a>
                         </li>
                     </ul>
+                    <div class="footer-copyright">&copy; 2023 Reborn, all rights reserved</div>
                 </div>
-                <div style="text-align: center; margin-top: 20px;">&copy; 2023 Reborn, all rights reserved</div>
             </div>
         </footer>
     </div>
